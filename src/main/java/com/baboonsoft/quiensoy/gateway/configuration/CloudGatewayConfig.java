@@ -15,6 +15,8 @@ public class CloudGatewayConfig {
 	        		.uri("http://localhost:8100/"))
 	        .route(r -> r.path("/api/quienSoy/games/**")
 	        		.uri("http://localhost:8200/"))
+	        .route(r -> r.path("/api/quienSoy/guesses/**")
+	        		.uri("http://localhost:8300/"))
 	        .build();
     }
 }
